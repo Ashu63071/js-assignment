@@ -1,3 +1,4 @@
+//This .js file is called in html file in : js-assignment/Day2/assign2.html
 //ABOUT console.log
 console.log("This is my assignment on Javascript");
 //console.log() is used to print the output to the console of the page.
