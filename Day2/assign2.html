@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 Assignment2</title>
+</head>
+<body>
+    <script>
+        //Var
+        var name = "Ashu"//string
+        var marks = 50;//number
+        var isastudent = true;//boolean
+        var learnings = ['HTML','CSS','Jupyter','CoreJava'];//array
+        /*var: The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global.
+        var is a 'function scope'.*/
+
+        //let
+        // let is a 'block scope'
+        {
+            let name ="Priya";
+            console.log(name);
+        }
+        console.log(name);
+        //the changes made under block using keyword 'let' will not affect the variable overall , that means the variable name will restore the previous value after the block.Hence it is 'block scope'.
+
+        //Const
+        //const is also 'block scope'
+        const state = "Jharkhand";
+        console.log(state);
+        // state = "ORissa" : This is a invalid line as in const, value cannot be re-assign but it can be mutated.for example
+
+        const greet = ["Hii", "Hey"]
+        console.log(greet)
+        greet.push('Hello');
+        console.log(greet)
+
+
+    </script>
+</body>
+</html>
