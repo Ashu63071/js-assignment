@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day3 Assignment1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function OddorEven()
+            {
+                var n = document.getElementById('num').value;
+ 
+                if ( n % 2 == 0) 
+                {
+                    document.getElementById('sample').innerHTML = n + ' is an Even number';
+                }
+                else
+                {
+                    document.getElementById('sample').innerHTML = n + ' is an Odd number';
+                }
+            }        
+        </script>
+    </head>
+    <body>
+        <h2>Program to find number is Even or Odd!!!!!!</h2>
+        <form method="post">
+            Enter a number:  <input type="number" id="num" name="num" min="0" /><input type="button" value="Odd or Even" onclick="OddorEven()" name="find" />
+             <div style="margin-top: 10px;" id="sample"></div> 
+        </form>
+    </body>
+</html>
