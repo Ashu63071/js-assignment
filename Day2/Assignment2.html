@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day2</title>
+</head>
+<body>
+    <h2>Javascript some Array Methods</h2>
+        <p>.toString():Convert all the elements of the array into string</p>
+        <p>array.splice([startpos],[no.of elements to remove],[number of items to insert]): remove the elements and it returns the deleted items.</p>
+        <p>array.sort(): Sorts the array.</p>
+        <p>array,slice(): Slice a portion of the array.</p>
+        <h3>For Example: Syntax are:</h3>
+    <p>
+        let array=['hii','cat','dog', 5676, 2337.7, 357556n, true];
+        <br>
+
+        console.log(array.toString());<br>
+
+        console.log(array.toLocaleString());<br>
+
+        console.log(array.splice(2,2,"hey","hola"));<br>
+        console.log(array);<br>
+
+        console.log(array.sort());<br>
+
+        console.log(array.slice(0,4));<br>
+    </p>
+    
+    
+    <script>
+        let array=['hii','cat','dog', 5676, 2337.7, 357556n, true];
+
+
+        console.log(array.toString());
+
+        console.log(array.toLocaleString());
+
+        console.log(array.splice(2,2,"hey","hola"));
+        console.log(array);
+
+        console.log(array.sort());
+
+        console.log(array.slice(0,4));
+    </script> 
+    <h2>Javascript some String methods</h2>
+    <p>.substring: returns a part of the string , no negative values are allowed.</p>
+    <p>.toLocaleLowerCase: returns the whole string in local lower case.</p>
+    <p>.toUpperCase: returns the whole string into upper case.</p>
+    <p>.search(): search a string and returns the index position.</p>
+    <p>.substr(index,length): returns the subpart from the index position till the no. of character(whose length is given in second part.</p>
+    <p>.replace("replacable string","replaced string"): returns the string with the replaced parts.'//g' replaces globally, while '//i' replaces insensitive of case.</p>
+    <p>.trim(): Remove extra spaces in the string and returns the whole string.</p>
+    <p>.split('str'): converts the string into array by spliting the whole string into substrings from the str.</p>
+    <h4>For example syntaxes are:</h4>
+    <p>let line = "            Beta bought some butter, but butter bought by Beta was bitter. So Beta bought some more better butter to make the bitter butter better        "<br>
+        console.log(line);<br>
+        console.log(line.substring(63,101));<br>
+        console.log(line.toLocaleLowerCase());<br>
+        console.log(line.toUpperCase());<br>
+        console.log(line.search('butter'));<br>
+        console.log(line.substr(17,6));<br>
+        console.log(line.replace(/bitter/g,"stale"));<br>
+        console.log(line.trim());<br>
+        console.log(line.split('butter'));</p><br>
+    <script>
+        let line = "            Beta bought some butter, but butter bought by Beta was bitter. So Beta bought some more better butter to make the bitter butter better        "
+        console.log(line);
+        console.log(line.substring(63,101));
+        console.log(line.toLocaleLowerCase());
+        console.log(line.toUpperCase());
+        console.log(line.search('butter'));
+        console.log(line.substr(17,6));
+        console.log(line.replace(/bitter/g,"stale"));
+        console.log(line.trim());
+        console.log(line.split('butter'));
+    </script>
+    <h4>Note: Answers are there in the console of the page.</h4>
+</body>
+</html>
