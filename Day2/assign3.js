@@ -1,6 +1,6 @@
 //Data types in Java Script
 
-
+//Day 1 Assignment3
 
 //1. Number: These are both interger and float values. This undergoes operations like multiplication,division,addition and so on. There are special numeric values in Javascript which are +Infinity , -Infinity and NaN.
 //(+ or -) Infinity is special number exist in Javascript which can be output of any number divided by zero.
