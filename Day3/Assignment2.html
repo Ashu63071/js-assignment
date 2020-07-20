@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3 Assignment2</title>
+    <script>
+        function findOSVersion()
+        {
+            var st = document.getElementById('st').value;
+            str= st.split(' ');
+
+                document.getElementById('sample').innerHTML = 'The OS name is '+str[0]+' and version is '+str[1];
+        }        
+    </script>
+</head>
+<body>
+    <h2>Program to display OS name & Version</h2>
+        <form method="post">
+            Enter your OS with Version name with a space:  <input type="String" id="st" name="st" min=" " /><input type="button" value="Click here to visible." onclick="findOSVersion()" name="find" />
+             <div style="margin-top: 10px;" id="sample"></div> 
+        </form>
+</body>
+</html>
