@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3 Assignment 3</title>
+    <script type="text/javascript">
+    function calc()
+    {
+       form=document.getElementById("form1");
+       mark=form.mark.value;
+
+       if(mark<35)
+       { 
+           form.grade.value="Fr";
+        }
+       else if(form.mark.value>=90)
+        {
+            form.grade.value="O";
+        }
+       else if (form.mark.value>=80 && form.mark.value<90)
+        {
+            form.grade.value="E";
+        }
+       else if (form.mark.value>=70 && form.mark.value<80)
+        {
+            form.grade.value="A";
+        }
+       else if (form.mark.value>=50 && form.mark.value<70)
+        {
+            form.grade.value="B";
+        }
+       else if (form.mark.value>=35 && form.mark.value<50)
+        {
+            form.grade.value="C";
+        }
+    }
+</script>
+</head>
+<body>
+<form id="form1">
+    Program to enter marks and find grade.<br /><br />
+   
+  Total marks in 100 :  <input type="text" size="20" name="mark"/><br />
+ 
+  <input type="button" name="btn" value="Calculate" onclick="calc()"/><br />
+
+  Grade : <input type="text" size="20" name="grade"/><br />
+</form>
+</body>
+</html>
