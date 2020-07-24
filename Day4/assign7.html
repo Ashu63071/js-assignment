@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Assignment 7</title>
+    <h3> Program to find prime no. between 1 to N.</h3>
+</head>
+<body>
+    <script>
+        n=prompt("Enter a Number , N");
+        for(let i=1; i<=n;i++)
+        {
+            let c=0;
+            for(let j=1;j<=i;j++)
+            {
+                if(i%j==0)
+                c++;
+            }
+            if(c==2)
+            document.write(i+" , ");
+
+        }
+    </script>
+    
+</body>
+</html>

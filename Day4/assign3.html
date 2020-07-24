@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 Assignment 3</title>
+    <h3> Program to add grocery items in shoppingBasket.</h3>
+</head>
+
+
+<body>
+<p id="demo"></p>
+<script>
+
+    var shoppingList = ['Maida', 'Rava','Tamarind','Rice','Pulses','Besan flour','jaggery','sugar'];
+    shoppingList.forEach(myFunction);
+
+    function myFunction(item, index) {
+        document.getElementById("demo").innerHTML += (index+1) + ":" +" "+ item + "<br>"; 
+    }
+
+</script>
+<h3> New Item in Shopping Basket are:</h3>
+<script>
+
+
+
+         function newFunction(item, index) {
+        document.getElementById("demo").innerHTML += (index+1) + ":" +" "+ item + "<br>"; 
+    }
+
+    
+
+    var shoppingBasket=shoppingList;
+    shoppingBasket.push('Tootpaste','colddrink','Salt','Sugar','Snacks');
+    shoppingBasket.forEach(newFunction);
+</script>
+
+</body>
+</html>
